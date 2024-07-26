@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NateDomain</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    
+  <!-- ------- AUDIO ------- -->
+ 
+    
+  <!-- ------- AUDIO ------- -->
+  
+  <div class="container">
+    <home>
+    <header>
+      <a href="index.html" class="logo">Nate <span>Domain</span></a>
+      <ul>
+        <li><a href="index.html" class="active">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn"><li><a href="#">Menus</a></li></button>
+          <div class="dropdown-content">
+            <a href="car.html">Car Comparison</a>
+            <a href="music.html">Music</a>
+            <a href="youtube.html">Youtube Videos</a>
+          </div>
+        </div>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </header>    
+    <div class="content">
+      <div class="bannerText" id="slideshowText">
+        <div class="active">
+          <h2>Do you value performance?<br></h2>
+            <h3>Luxury?<br>
+            Our own ecosystem?<br>
+            Fun?<br></h3>
+            <p>I personally value all 4. Which is why it's a tough choice.</p>
+            <a href="car.html">Read more</a>
+        </div>
+        <div>
+          <h2>Muscle and<br>
+            Sports Cars<br></h2>
+            <p>My personal fav.</p>
+            <a href="car.html">Read more</a>
+        </div>
+        <div>
+          <h2>Electric Cars<br></h2>
+            <p>Reducing carbon footprint one wheel at a time. Or four actually.</p>
+            <a href="car.html">Read more</a>
+        </div>
+      </div>
+    <div class="bannerImg" id="slideshow">
+      <img src="images/resized/gt.jpg"  class="active">
+      <img src="images/resized/eco.jpg">
+      <img src="images/resized/leaf.jpg">
+      </div>
+  </div>
+    <div class="icons">
+    <ul class="media">
+      <li><a href="https://www.instagram.com/ncallon503/?hl=en" target="_blank"> <img src="images/resized/insta_t.png" ></a></li>
+      <li><a href="https://www.facebook.com/NathanFCallon" target="_blank"> <img src="images/resized/facebook_t.png"></a></li>
+      <li><a href="https://www.youtube.com/channel/UC-ZeiDo_kgEg38upgyyFWmg" target="_blank"> <img src="images/resized/youtube_t.png"></a></li>
+      <li><a href="mailto:nath4ncallon@gmail.com" target="_blank"> <img src="images/resized/gmail_t.png"></a></li>
+      </ul>
+      <ul class="controls">
+        <li><a><img src="images/resized/left_t.png" onclick="prevSlide();prevSlideText();"></a></li>
+        <li><a><img src="images/resized/right_t.png" onclick="nextSlide();nextSlideText();"></a></li>
+      </ul>
+    </div></home>
+  </div>
+  <script type="text/javascript">
+
+    var slideshow = document.getElementById('slideshow');
+    var slides = slideshow.getElementsByTagName('img');
+    var index = 0;
+    
+    function nextSlide(){
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    }
+    function prevSlide(){
+      slides[index].classList.remove('active');
+      index = (index - 1 + slides.length) % slides.length;
+      slides[index].classList.add('active');
+    }
+    
+        var slideshowText = document.getElementById('slideshowText');
+    var slidesText = slideshowText.getElementsByTagName('div');
+    var i = 0;
+    
+    function nextSlideText(){
+      slidesText[i].classList.remove('active');
+      i = (i + 1) % slidesText.length;
+      slidesText[i].classList.add('active');
+    }
+    function prevSlideText(){
+      slidesText[i].classList.remove('active');
+      i = (i - 1 + slidesText.length) % slidesText.length;
+      slidesText[i].classList.add('active');
+    }
+  </script>
+</body>
+</html>

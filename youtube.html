@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NateDomain</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    
+  <!-- ------- AUDIO ------- -->
+  
+  <!-- ------- AUDIO ------- -->
+  
+  <div class="container">
+    <header>
+      <a href="index.html" class="logo"><first>Nate</first> <span>Domain</span></a>
+      <ul>
+        <li><a href="index.html" class="active">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn"><li><a href="#">Menus</a></li></button>
+          <div class="dropdown-content">
+            <a href="car.html">Car Comparison</a>
+            <a href="music.html">Music</a>
+            <a href="youtube.html">Youtube Videos</a>
+          </div>
+        </div>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </header> 
+    <div class="content">
+    <div class="bannerText">
+      <h4>My YouTube videos:</h4><br>
+      <p5>Eating Challenges<br></p5>
+      <ul>
+        <br>
+        <li><button class="custom" onclick="displayWings();">Eating 'Atomic' (10/10 spice) Wingstop Hot-wings </button></li>
+        <li><button class="custom" onclick="displaySub();">Eating Subway sandwich in under 50 seconds</button></li>
+      </ul>
+    </div>
+      <div class="video">
+        <iframe width="746" height="420" id="wings" class="activey" src="https://www.youtube.com/embed/JnCxs_tAJF0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+  
+    function displayWings()
+    {
+      document.querySelector('.video').innerHTML = '<iframe width="746" height="420" id="wings" class="activey" src="https://www.youtube.com/embed/JnCxs_tAJF0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    }
+    
+    function displaySub()
+    {
+      document.querySelector('.video').innerHTML = '<iframe width="746" height="420" id="subway" class="activey" src="https://www.youtube.com/embed/esUmD9d6nPg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+    }
+    
+    function setActive(element, name)
+    {
+      var active_ele = document.getElementsByClassName('activey');
+      for(var i = 0; i < active_ele.length; i++)
+        active_ele[i].classList.remove('activey');
+      
+      var ele = document.getElementById(element);
+      ele.classList.toggle('activey');
+      <!-- ele.classList.toggle(mustang_gt.drive); -->
+    }
+    
+    function mute()
+    {
+      if(document.getElementById('player').muted == true) document.getElementById('player').muted = false;
+      else document.getElementById('player').muted = true;
+    }
+
+  </script>
+</body>
+</html>

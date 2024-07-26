@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NateDomain</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    
+  <!-- ------- AUDIO ------- -->
+ 
+  <!-- ------- AUDIO ------- -->
+  
+  <div class="container">
+    <header>
+      <a href="index.html" class="logo"><first>Nate</first> <span>Domain</span></a>
+      <ul>
+        <li><a href="index.html" class="active">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn"><li><a href="#">Menus</a></li></button>
+          <div class="dropdown-content">
+            <a href="car.html">Car Comparison</a>
+            <a href="music.html">Music</a>
+            <a href="youtube.html">Youtube Videos</a>
+          </div>
+        </div>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </header> 
+    <div class="content">
+    <div class="bannerText">
+      <h4>Are you interested in:</h4><h5><br>Disclaimer: Aside from some newer electric cars and most supercars, all cars are base model 2017 unless clearly <br>stated otherwise for fair comparison. <br>MSRP's are taken from manufacturer's suggested retail price at date of release.<br>This list was made in 2020.</h5><br>
+      
+      <cars><ul>
+      
+        <li><p2>Electric Cars</p2><ul>
+        <li><p><button class="custom" onclick="setActive('tesla', tesla);">Tesla Model 3 Performance</button></p></li>
+        <li><p><button class="custom" onclick="setActive('bmw_i4', bmw_i4);">BMW i4</button></p></li>
+        <li><p><button class="custom" onclick="setActive('leaf',leaf);"> Nissan Leaf</button></p></li>
+      </ul>  </li>
+        <li><p2>Sports/Muscle Cars</p2><ul>
+        <li><p><button class="custom" onclick="setActive('mustang_gt', mustang_gt);">Mustang GT</button></p></li>
+        <li><p><button class="custom" onclick="setActive('mustang_eco', mustang_eco);">Mustang EcoBoost</button></p></li>
+        <li><p><button class="custom" onclick="setActive('mustang_v6',mustang_v6);">Mustang V6</button></p></li>
+        
+          </ul><ul>
+        <li><p><button class="custom" onclick="setActive('challenger_sxt', challenger_sxt);">Challenger SXT</button></p></li>
+        <li><p><button class="custom" onclick="setActive('challenger_rt', challenger_rt);">Challenger R/T</button></p></li>
+        
+          </ul><ul>
+        <li><p><button class="custom" onclick="setActive('camaro_lt', camaro_lt);">&ensp;&ensp;Camaro LT&ensp;&ensp;</button></p></li>
+        <li><p><button class="custom" onclick="setActive('camaro_ss', camaro_ss);">&ensp;&ensp;Camaro SS&ensp;</button></p></li>
+        
+          </ul> </li>
+        
+        
+      </ul></cars>
+      
+      <cars><ul>
+      
+        <li><p2>Daily Drivers</p2><ul>
+        <li><p><button class="custom" onclick="setActive('civic', civic);">Honda Civic</button></p></li>
+        <li><p><button class="custom" onclick="setActive('camry', camry);">Toyota Camry</button></p></li>
+        <li><p><button class="custom" onclick="setActive('sentra',sentra);">Nissan Sentra</button></p></li>
+          </ul><ul>
+        <li><p><button class="custom" onclick="setActive('forte', forte);">Kia Forte</button></p></li>
+        <li><p><button class="custom" onclick="setActive('crosstrek', crosstrek);">Subaru Crosstrek</button></p></li>
+        <li><p><button class="custom" onclick="setActive('golf',golf);">Volkswagen Golf</button></p></li>
+          </ul></li>
+        <li><p2>Hypercars/Supercars</p2><ul>
+        <li><p><button class="custom" onclick="setActive('carrera', carrera);">Porsche Carrera GT</button></p></li>
+        <li><p><button class="custom" onclick="setActive('gt', gt);">Ford GT</button></p></li>
+        <li><p><button class="custom" onclick="setActive('f1',f1);">McLaren F1</button></p></li>
+          </ul><ul>
+        <li><p><button class="custom" onclick="setActive('chiron', chiron);">Bugatti Chiron</button></p></li>
+        <li><p><button class="custom" onclick="setActive('gt', gt);">Ford GT</button></p></li>
+        <li><p><button class="custom" onclick="setActive('f1',f1);">McLaren F1</button></p></li>
+          </ul></li>
+      
+      </ul></cars>
+      
+      <cars><ul>
+        
+        <li><p2>Pickup Trucks</p2><ul>
+        <li><p><button class="custom" onclick="setActive('tesla', tesla);">Ford F150</button></p></li>
+        <li><p><button class="custom" onclick="setActive('bmw_i4', bmw_i4);">Chevy Silverado</button></p></li>
+        <li><p><button class="custom" onclick="setActive('leaf',leaf);">Dodge Ram</button></p></li>
+          </ul></li>
+        <li><p2>Family Vehicles</p2><ul>
+        <li><p><button class="custom" onclick="setActive('odyssey', odyssey);">Honda Odyssey</button></p></li>
+        <li><p><button class="custom" onclick="setActive('bmw_i4', bmw_i4);">Dodge Grand Caravan</button></p></li>
+        <li><p><button class="custom" onclick="setActive('leaf',leaf);">Toyota Sienna</button></p></li>
+          </ul></li>
+        
+      </ul></cars>
+      
+      
+    </div>
+      <div class="carImage">
+        <img src="images/resized/tesla3perf.jpg" id="tesla" class="activey">
+        <img src="images/bmw_i4.jpg" id="bmw_i4">
+        <img src="images/leaf.jpg" id="leaf">
+        <img src="images/mustang_gt.jpg" id="mustang_gt">
+        <img src="images/resized/eco.jpg" id="mustang_eco">
+        <img src="images/resized/v6_2.jpg" id="mustang_v6">
+        <img src="images/challenger_sxt.jpg" id="challenger_sxt">
+        <img src="images/challenger_rt.jpg" id="challenger_rt">
+        <img src="images/camaro_lt.png" id="camaro_lt">
+        <img src="images/camaro_ss.jpg" id="camaro_ss">
+        <img src="images/civic.jpg" id="civic">
+        <img src="images/camry.jpg" id="camry">
+        <img src="images/resized/sentra.jpg" id="sentra">
+        <img src="images/resized/forte.jpg" id="forte">
+        <img src="images/resized/crosstrek.jpg" id="crosstrek">
+        <img src="images/resized/golf.jpg" id="golf">
+        <img src="images/carrera.jpg" id="carrera">
+        <img src="images/gt.jpg" id="gt">
+        <img src="images/f1.png" id="f1">
+        <img src="images/chiron.jpg" id="chiron">
+        <img src="images/odyssey.jpg" id="odyssey">
+      </div>
+      <div class="carText">
+      
+        MSRP: <green>$64,000</green> <br>Year: 2018<br>Make: Tesla<br>Model: Model 3 Performance<br>Horsepower: 450hp<br> Torque: 471 lb-ft<br>Engine: Dual Motor<br>MPG: 315 miles of range<br>Drive: AWD<br>0-60 (mph): 3.5 seconds
+        
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+  
+    class car {
+      constructor(msrp, year, make, model, hp, torque, engine, mpg, drive, accel)
+      {
+        this.msrp = msrp;
+        this.year = year;
+        this.make = make;
+        this.model = model;
+        this.hp = hp;
+        this.torque = torque;
+        this.engine = engine;
+        this.mpg = mpg;
+        this.drive = drive;
+        this.accel = accel;
+      }
+    }
+      
+      var tesla = new car('64,000', '2018', 'Tesla', 'Model 3 Performance', '450', '471', 'Dual Motor', '315 miles of range', 'AWD', '3.5 seconds');
+    
+      var bmw_i4 = new car('50,000', '2021', 'BMW', 'i4', '530', '600', 'Single Motor', '372 miles of range', 'RWD', '4.0 seconds');
+    
+      var leaf = new car('29,990', '2018', 'Nissan', 'Leaf', '147', '236', 'Single Motor', '150 miles of range', 'FWD', '7.4 seconds');
+    
+      var mustang_gt = new car('33,195', '2017', 'Ford', 'Mustang GT', '435', '400', '5.0L V8', '15/25', 'RWD', '4.3 seconds');
+    
+      var mustang_eco = new car('26,165', '2017', 'Ford', 'Mustang EcoBoost', '310', '320', '2.3L 4-cylinder', '22/31', 'RWD', '5.5 seconds');
+    
+      var mustang_v6 = new car('25,545', '2017', 'Ford', 'Mustang V6', '300', '280', '3.7L V6', '17/28', 'RWD', '5.5 seconds');
+    
+      var challenger_sxt = new car('28,000', '2017', 'Dodge', 'Challenger SXT', '305', '268', '3.6L V6', '19/30', 'RWD', '6.8 seconds');
+    
+      var challenger_rt = new car('32,995', '2017', 'Dodge', 'Challenger R/T', '375', '410', '5.7L V8', '15/23', 'RWD', '5.8 seconds');
+    
+      var camaro_lt = new car('27,300', '2017', 'Chevrolet', 'Camaro LT', '275', '295', '2.0L 4-cylinder', '22/31', 'RWD', '5.4 seconds');
+    
+      var camaro_ss = new car('38,000', '2017', 'Chevrolet', 'Camaro SS', '455', '455', '6.2L V8', '16/25', 'RWD', '4.7 seconds');
+    
+      var civic = new car('21,140', '2017', 'Honda', 'Civic', '158', '138', '2.0L 4-cylinder', '32/42', 'FWD', '6.8 seconds');
+    
+      var camry = new car('23,070', '2017', 'Toyota', 'Camry', '178', '170', '2.5L 4-cylinder', '24/33', 'FWD', '8.5 seconds');
+    
+      var sentra = new car('17,990', '2017', 'Nissan', 'Sentra', '130', '128', '1.8L 4-cylinder', '29/37', 'FWD', '10.2 seconds');
+    
+      var crosstrek = new car('22,570', '2017', 'Subaru', 'Crosstrek', '148', '145', '2.0L H-4', '26/33', 'AWD', '5.8 seconds');
+    
+      var golf = new car('20,714', '2017', 'Volkswagen', 'Golf', '170', '184', '1.8L 4-cylinder', '25/36', 'FWD', '7.6 seconds');
+    
+      var forte = new car('17,300', '2017', 'Kia', 'Forte', '147', '132', '2.0L 4-cylinder', '29/38', 'FWD', '8.5 seconds');
+    
+      var carrera = new car('448,000', '2004', 'Porsche', 'Carrera GT', '605', '435', '5.7L V10', '10/16', 'RWD', '3.5 seconds');
+    
+      var gt = new car('139,995', '2005-2006', 'Ford', 'GT', '550', '500', '5.4L V8', '12/19', 'RWD', '3.8 seconds');
+    
+      var f1 = new car('815,000', '1992-1998', 'McLaren', 'F1', '618', '479', '6.1L V12', '9/23', 'RWD', '3.2 seconds');
+    
+      var chiron = new car('2,998,000', '2019', 'Bugatti', 'Chiron', '1500', '1180', '8L W16', '9/14', 'RWD', '2.3 seconds');
+    
+      var odyssey = new car('31,900', '2017', 'Honda', 'Odyssey', '248', '250', '3.5L V6', '19/27', 'AWD', '6.5 seconds');
+       
+    function setActive(element, name)
+    {
+      var active_ele = document.getElementsByClassName('activey');
+      for(var i = 0; i < active_ele.length; i++)
+        active_ele[i].classList.remove('activey');
+      
+      var ele = document.getElementById(element);
+      ele.classList.toggle('activey');
+      <!-- ele.classList.toggle(mustang_gt.drive); -->
+      
+      document.querySelector('.carText').innerHTML = 'MSRP: <green>$' + name.msrp + '</green><br>Year: ' + name.year + '<br>Make: ' + name.make + '<br>Model: ' + name.model + '<br>Horsepower: ' + name.hp + 'hp<br> Torque: ' + name.torque + ' lb-ft<br>Engine: ' + name.engine + '<br>MPG: ' + name.mpg + '<br>Drive: ' + name.drive + '<br>0-60 (mph): ' + name.accel;
+    }
+    
+    function mute()
+    {
+      if(document.getElementById('player').muted == true) document.getElementById('player').muted = false;
+      else document.getElementById('player').muted = true;
+    }
+
+  </script>
+</body>
+</html>

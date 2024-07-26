@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NateDomain</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    
+  <!-- ------- AUDIO ------- -->
+ 
+  <!-- ------- AUDIO ------- -->
+  
+  <div class="container">
+    <header>
+      <a href="index.html" class="logo"><first>Nate</first> <span>Domain</span></a>
+      <ul>
+        <li><a href="index.html" class="active">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn"><li><a href="#">Menus</a></li></button>
+          <div class="dropdown-content">
+            <a href="car.html">Car Comparison</a>
+            <a href="music.html">Music</a>
+            <a href="youtube.html">Youtube Videos</a>
+          </div>
+        </div>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </header> 
+    <div class="content5">
+    <h5>What is this section?<br></h5>
+    </div>
+      <p5><br>&ensp; My dad's music page.</p5><br><br><br>&ensp; &ensp;<iframe width="25%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/313711269&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/pteryandthedactones" title="Ptery &amp; the Dactones" target="_blank" style="color: #cccccc; text-decoration: none;">Ptery &amp; the Dactones</a> · <a href="https://soundcloud.com/pteryandthedactones/marty-why-u-gotta-do-me-like" title="Marty why u gotta do me like that (original)" target="_blank" style="color: #cccccc; text-decoration: none;">Marty why u gotta do me like that (original)</a></div>
+    
+    &ensp; &ensp;<iframe width="25%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/707455768&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/pteryandthedactones" title="Ptery &amp; the Dactones" target="_blank" style="color: #cccccc; text-decoration: none;">Ptery &amp; the Dactones</a> · <a href="https://soundcloud.com/pteryandthedactones/old-town-marty" title="Old town Marty" target="_blank" style="color: #cccccc; text-decoration: none;">Old town Marty</a></div>
+  </div>
+  <script type="text/javascript">
+  
+    class car {
+      constructor(year, make, model, hp, torque, engine, mpg, drive, accel)
+      {
+        this.year = year;
+        this.make = make;
+        this.model = model;
+        this.hp = hp;
+        this.torque = torque;
+        this.engine = engine;
+        this.mpg = mpg;
+        this.drive = drive;
+        this.accel = accel;
+      }
+    }
+      
+    function setActive(element, name)
+    {
+      var active_ele = document.getElementsByClassName('activey');
+      for(var i = 0; i < active_ele.length; i++)
+        active_ele[i].classList.remove('activey');
+      
+      var ele = document.getElementById(element);
+      ele.classList.toggle('activey');
+      <!-- ele.classList.toggle(mustang_gt.drive); -->
+      
+      document.querySelector('.carText').innerHTML = 'Year: ' + name.year + '<br>Make: ' + name.make + '<br>Model: ' + name.model + '<br>Horsepower: ' + name.hp + 'hp<br> Torque: ' + name.torque + ' lb-ft<br>Engine: ' + name.engine + '<br>MPG: ' + name.mpg + '<br>Drive: ' + name.drive + '<br>0-60: ' + name.accel;
+    }
+    
+    function mute()
+    {
+      if(document.getElementById('player').muted == true) document.getElementById('player').muted = false;
+      else document.getElementById('player').muted = true;
+    }
+
+  </script>
+</body>
+</html>
